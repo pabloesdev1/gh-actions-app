@@ -1,0 +1,16 @@
+name: Hello World Workflow
+on: workflow_dispatch
+
+jobs:
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compiling application
+        run: echo "Compiling the application..."
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running tests
+        run: echo "Running tests..."
